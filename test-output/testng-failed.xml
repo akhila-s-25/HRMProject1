@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRMTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest2">
+        <methods>
+          <include name="verifyUserDetails"/>
+          <include name="VerifyURL"/>
+          <include name="SetUp"/>
+          <include name="VerifyTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest2 -->
+      <class name="OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest3">
+        <methods>
+          <include name="verifyUserDetails"/>
+          <include name="SetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest3 -->
+      <class name="OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest">
+        <methods>
+          <include name="verifyUserDetails"/>
+        </methods>
+      </class> <!-- OrangeHRM_TestNG_POM.OrangeHRM_TestNG_POM.test_cases.AdminTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [OrangeHRMTests] -->

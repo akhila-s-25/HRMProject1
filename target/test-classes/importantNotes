@@ -1,0 +1,32 @@
+# Page factory and POM::
+
+Important Points to be noted:
+1.In src/main/java ,Pages which are created for reusable locators and methods (POM),should not extend (inherit) base class.
+2.In src/main/java, In Each Page class , Webdriver should be declared globally
+    Ex:- public WebDriver driver;
+
+3. In src/main/java, Each Page class should also have a constructor with WebDriver as Parameter 
+to Initialize the Page driver with Base class driver when object is created for the Page class.
+
+4. PageFactory class should be referred to use initelements , to initialize the webelements with driver
+    Ex:- public Page(WebDriver driver){
+    
+         this.driver=driver;
+         
+         PageFactory.initelements(driver,this)
+    
+    }
+    
+5. In Src/test/java, Test classes should extend(inherit) Base Class.
+
+6. Base class driver variable should be the implicit driver variable for Test class, 
+
+Hence, we should not Explicitly declare driver again for Test class.
+
+7. No need of constructor again in Test class.
+
+8. Inorder to use reusable methods of Page classes of src/main/java in scr/test/ java test classes,
+Objects should be created for the page classes.
+
+9. IMP : Objects should be created for the page classes inside the Test Methods..but not globally inside the class.
+
